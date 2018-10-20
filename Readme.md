@@ -14,3 +14,4 @@ Console app which parses json file and make some simple data transformation.
 ## Screenshots
 
 ![image](https://raw.githubusercontent.com/al1s/Lab08-Linq-in-Manhatten/master/screenshot1.PNG)
+![image](https://raw.githubusercontent.com/al1s/Lab08-Linq-in-Manhatten/master/screenshot2.PNG)

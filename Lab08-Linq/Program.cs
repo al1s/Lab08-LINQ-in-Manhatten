@@ -40,7 +40,7 @@ namespace Lab08_Linq
             var allNeighborhoodsGrouped = allNeighborhoods
                 .GroupBy(x => x, (key, val) => new { Neighborhood = key, Cnt = val.Count() })
                 .OrderByDescending(x => x.Cnt);
-            Console.WriteLine("All neighborhoods:");
+            Console.WriteLine("All neighborhoods:".ToUpper());
 
             // Output neighborhoods to console
             allNeighborhoodsGrouped
@@ -48,7 +48,7 @@ namespace Lab08_Linq
                 .ForEach(elm => Console.WriteLine(elm.Neighborhood.PadRight(40, ' ') + elm.Cnt));
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("All neighborhoods whithout blank data:");
+            Console.WriteLine("All neighborhoods whithout blank data:".ToUpper());
 
             // Filter out all blank neighborhood names
             allNeighborhoodsGrouped
@@ -57,7 +57,7 @@ namespace Lab08_Linq
                 .ForEach(elm => Console.WriteLine(elm.Neighborhood));
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("All in one line");
+            Console.WriteLine("All in one line".ToUpper());
 
             // One-liner
             features
@@ -68,7 +68,7 @@ namespace Lab08_Linq
                 .ForEach(x => Console.WriteLine(x.Neighborhood));
             Console.ReadLine();
             Console.Clear();
-            Console.WriteLine("All in one line again but with LINQ");
+            Console.WriteLine("All in one line again but with LINQ".ToUpper());
 
             // One-liner as LINQ without lambda
             var neighborhoods = from feature in features
